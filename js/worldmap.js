@@ -5,8 +5,8 @@ var zoom = new Datamap({
   setProjection: function(element) {
     var projection = d3.geo.equirectangular()
       .center([23, -3])
-      .rotate([220.4, 0])
-      .scale(250)
+      .rotate([225.4, 0])
+      .scale(255)
       .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
     var path = d3.geo.path()
       .projection(projection);
@@ -41,7 +41,7 @@ var zoom = new Datamap({
   }
 });
 zoom.bubbles([
- {name: 'Bubble 1', latitude: 0.8037, longitude: 11.6094, radius: 8, fillKey: 'gt500'},
+ {name: 'Gabon was a uniqe experience', latitude: 0.8037, longitude: 11.6094, radius: 8, fillKey: 'gt500'},
  {name: 'Bubble 2', latitude: 35.9078, longitude: 127.7669, radius: 8, fillKey: 'eq0'},
  {name: 'Bubble 3', latitude: 61.5240, longitude: 105.3188, radius: 8, fillKey: 'lt25'},
  {name: 'Bubble 4', latitude: 15.8700, longitude: 100.9925, radius: 8, fillKey: 'eq50'},
@@ -52,6 +52,6 @@ zoom.bubbles([
  {name: 'Bubble 8', latitude: 40.116421, longitude:  -88.243385, radius: 8, fillKey: 'eq50'},
 ], {
  popupTemplate: function(geo, data) {
-   return "<div class='hoverinfo'>Bubble for " + data.name + "";
+   return "<div class='hoverinfo'>" + data.name + "";
  }
 });
