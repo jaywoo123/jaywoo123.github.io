@@ -171,17 +171,9 @@ header.masthead {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
+  vertical-align: middle;
   color: black;
   background: #eee; }
-  header.masthead img {
-    top: 380px;
-    left: 730px;
-    z-index: 2;
-    position:absolute;
-    height: 32%;
-    width: 15%;
-    display: block;
-    margin: 0 auto 20px; }
   header.masthead .intro-text .name {
     position:absolute;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -464,3 +456,6 @@ footer {
 .btn:active,
 .btn:focus {
   outline: none; }
+
+#zoom-map {display:inline-block;
+margin: 0 auto;}
