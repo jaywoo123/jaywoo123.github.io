@@ -6,8 +6,8 @@ var zoom = new Datamap({
     var projection = d3.geo.equirectangular()
       .center([23, -3])
       .rotate([225.4, 0])
-      .scale(150)
-      .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+      .scale(176)
+      .translate([element.offsetWidth / 2 +69, element.offsetHeight / 2]);
     var path = d3.geo.path()
       .projection(projection);
 
