@@ -141,7 +141,7 @@ section.success {
     -moz-transition: padding-top 0.15s, padding-bottom 0.15s;
     transition: padding-top 0.15s, padding-bottom 0.15s; }
     #mainNav .navbar-brand {
-      width: 8em;
+      width: 7em;
       height: 8em;
       -webkit-transition: all 0.15s;
       -moz-transition: all 0.15s;
