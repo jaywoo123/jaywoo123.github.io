@@ -135,8 +135,8 @@ section.success {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     -webkit-transition: padding-top 0.15s, padding-bottom 0.15s;
     -moz-transition: padding-top 0.15s, padding-bottom 0.15s;
     transition: padding-top 0.15s, padding-bottom 0.15s; }
@@ -457,5 +457,5 @@ footer {
 .btn:focus {
   outline: none; }
 
-#zoom-map {display:inline-block;
+#zoom-map {display:none;
 margin: 0 auto;}
