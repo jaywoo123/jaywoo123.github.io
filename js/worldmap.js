@@ -48,7 +48,7 @@ zoom.bubbles([
  {name: 'I went to grade school in DC. My biggest challenge was transitioning from body language to verbal communication. I eventually picked up English as my second language.', latitude: 38.89511, longitude: -77.03637, radius: 8, fillKey: 'eq50'},
  {name: 'I attended the last two years of my highschool in Thailand. Thailand opened my eyes to many different social contexts. I met both privileged and underprivileged groups of people. I decided to persue engineering after enlightening moments in Thailand.', latitude: 15.8700, longitude: 100.9925, radius: 8, fillKey: 'eq50'},
  {name: 'I started highschool in Beverly Hills. I saw one hollywood movie star when I had the chance to visit her house.', latitude: 34.0522, longitude: -118.2437, radius: 8, fillKey: 'eq50'},
- {name: 'I went to middle school in Boston. By then, I learned to embrace diversity by befriending all types of people. One of my favorite foods became Boston Clam Chowder.', latitude: 423616421, longitude:  -71.243385, radius: 8, fillKey: 'eq50'},
+ {name: 'I went to middle school in Boston. By then, I learned to embrace diversity by befriending all types of people. One of my favorite foods became Boston Clam Chowder.', latitude: 42.3616421, longitude:  -71.243385, radius: 8, fillKey: 'eq50'},
 ], {
  popupTemplate: function(geo, data) {
    return "<div class='hoverinfo'>" + data.name + "";
