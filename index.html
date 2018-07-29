@@ -71,22 +71,43 @@ circle {
 
 </style>
 <body class = "intro_after_dataload">
-<svg data-intro= "hi" data-step="1"></svg>
+<button data-intro= "Welcome to the Seattle Crime Visualization. This is an introduction to explain the different scenes in this visualization. After the introduction is done, please hit the 'About the Visualization' button for more information." data-step="1" onclick="myFunction()">About the Visualization</button>
 
-<svg id="chart" data-intro='hello' data-step="2"></svg>
-
-<svg id="barchart" data-intro='hello' data-step="4"></svg>
-
+<div id="myDIV"></div>
+<div>
+<text> Geolocation Graph of Crimes in Seattle </text>
+<br>
+<svg data-intro= "This is the geolocation chart for seattle crimes. The size of circles represent the number of certain crimes in the area." data-step="2"></svg>
+</div>
+<div>
+<text> Crime Counts Aggregated by Month in Seattle from 2009-2017 </text>
+<br>
+<svg id="chart" data-intro='This is the monthly counts of crimes in seattle. It visualizes monthly trends of how certain crimes increase or decrease. People may infer from this data that some months are higher at risk for crimes.' data-step="3"></svg>
+</div>
+<div>
+<text> Aggregated Total Counts of Crime in Seattle from 2009-2017 </text>
+<br>
+<svg id="barchart" data-intro='This is a visualization of total crime counts in seattle. It shows which crimes are most common regardless of time of the year.' data-step="4"></svg>
+</div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="js/geoGraph.js"></script>
 <script src="js/LineGraph.js"></script>
 <script src="js/barGraph.js"></script>
-<img id="barchart" data-intro='hello' data-step="3" src="js/legend.png" alt="legend" id="legend">
+<img id="barchart" src="js/legend.png" alt="legend" id="legend">
 <script src="js/intro.js"></script>
 <script>
 //code for intro tutorial
 var callintro = function(){introJs().setOption("showStepNumbers", "false").start();};
 setTimeout(callintro, 2000);
+
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.innerHTML === "") {
+        x.innerHTML = "Hybrid Structure: A Martini Glass structure is used. The visualization always starts with an introduction (author driven content) which explains the visualizations scenes. Then the users are able to explore the visualiztions. Scenes: Each of the 3 visualizations contained correspond to a scene and tell a story about the data. Annotations: Annotations were used to point out possible explaination for trends in data. Parameters: Clicking on the map changes the state by zooming. Different categories of crimes were colored so that viewers can filter crimes. Triggers are present in the intro stage. As viewers trigger the next of back buttons, the state of the introduction is changed or the user can exit the intro to view visualizations.";
+    } else {
+        x.innerHTML = "";
+    }
+}
 </script>
 </body>
