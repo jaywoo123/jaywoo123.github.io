@@ -4,9 +4,9 @@ var zoom = new Datamap({
   // Zoom in on Africa
   setProjection: function(element) {
     var projection = d3.geo.equirectangular()
-      .center([23, -3])
-      .rotate([225.4, 0])
-      .scale(176)
+      .center([23, 28])
+      .rotate([215.4, 0])
+      .scale(250)
       .translate([element.offsetWidth / 2 +69, element.offsetHeight / 2]);
     var path = d3.geo.path()
       .projection(projection);
