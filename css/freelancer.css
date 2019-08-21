@@ -457,5 +457,6 @@ footer {
 .btn:focus {
   outline: none; }
 
-#zoom-map {display:none;
-margin: 0 auto;}
+.zoom_map {
+  height: 200px;
+}
